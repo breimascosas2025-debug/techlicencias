@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLicencias CR - Licencias Digitales Originales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Cart -->
+    <div class="floating-cart">
+        <button class="cart-button">🛒</button>
+        <div class="cart-badge" style="display: none;">0</div>
+        <div class="cart-panel">
+            <div class="cart-header">Tu Carrito</div>
+            <div class="cart-items-list">
+                <div class="cart-empty-msg">Tu carrito está vacío</div>
+            </div>
+            <div class="cart-footer-panel">
+                <div class="cart-total-panel">
+                    <span>Total:</span>
+                    <span class="cart-total-amount">₡0</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn-clear" onclick="clearCart()">Limpiar</button>
+                    <button class="btn-checkout-cart" onclick="checkout()">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo" style="display: flex; align-items: center; gap: 12px;">
+                <img src="uploads/file_0000000065a8720e84e4018075c0899a.png" alt="TechLicencias CR" style="height: 40px; width: auto;">
+                <span style="display: none;">TechLicencias<span>CR</span></span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bienvenido a <span>TechLicencias CR</span></h1>
+                <p>Tu tienda confiable de licencias digitales originales para computadoras y dispositivos móviles. Software de las mejores marcas con entrega rápida y soporte incluido.</p>
+                <div class="hero-buttons">
+                    <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por qué comprar con nosotros?</h2>
+                <p>Somos tu mejor opción para adquirir licencias de software original</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">✓</div>
+                    <h3>Licencias Originales</h3>
+                    <p>Todas nuestras licencias son 100% funcionales, seguras y verificadas. Garantizamos autenticidad.</p>
+                </div>
+                <div class="feature-card fade-in stagger-1">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Instalación Remota</h3>
+                    <p>Nos conectamos a tu computadora de forma remota para instalar y activar tu software de manera segura.</p>
+                </div>
+                <div class="feature-card fade-in stagger-2">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Instalación Remota Segura</h3>
+                    <p>Nos conectamos de forma remota a tu computadora para instalar y activar tu software de manera segura y profesional.</p>
+                </div>
+                <div class="feature-card fade-in stagger-3">
+                    <div class="feature-icon">💬</div>
+                    <h3>WhatsApp: 6094-1491</h3>
+                    <p>Comunícate directamente con nosotros para coordinar tu instalación remota y resolver dudas.</p>
+                </div>
+                <div class="feature-card fade-in stagger-4">
+                    <div class="feature-icon">📧</div>
+                    <h3>Email: breitan2012@gmail.com</h3>
+                    <p>Envíanos un correo para agendar tu instalación remota o consultar sobre nuestros servicios.</p>
+                </div>
+                <div class="feature-card fade-in stagger-4">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Rápido y Seguro</h3>
+                    <p>Instalación remota rápida y segura. Tu software estará listo en poco tiempo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="productos">
+        <div class="container">
+            <div class="products-intro">
+                <h2>Catálogo de Productos</h2>
+                <p>Explora nuestra selección de software original con licencia permanente</p>
+            </div>
+            <div class="products-grid">
+                <!-- Office 2024 -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <span class="product-badge">Original</span>
+                        <img src="uploads/2024.jpeg" alt="Office 2024" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Microsoft Office 2024</h3>
+                        <p>Última versión de Office con todas las herramientas profesionales.</p>
+                        <ul class="product-features">
+                            <li>Word - Procesador de texto</li>
+                            <li>Excel - Hojas de cálculo</li>
+                            <li>PowerPoint - Presentaciones</li>
+                            <li>Outlook - Correo profesional</li>
+                            <li>Access - Bases de datos</li>
+                            <li>Licencia permanente</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡6000<span>/licencia permanente</span></div>
+                            <button class="btn-add" onclick="addToCart('Office 2024', 6000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Office 2021 -->
+                <div class="product-card fade-in stagger-1">
+                    <div class="product-image">
+                        <span class="product-badge">Original</span>
+                        <img src="uploads/2021.jpeg" alt="Office 2021" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Microsoft Office 2021</h3>
+                        <p>Versión estable y confiable de Office para profesionales.</p>
+                        <ul class="product-features">
+                            <li>Word - Procesador de texto</li>
+                            <li>Excel - Hojas de cálculo</li>
+                            <li>PowerPoint - Presentaciones</li>
+                            <li>Outlook - Correo profesional</li>
+                            <li>Access - Bases de datos</li>
+                            <li>Licencia permanente</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡4500<span>/licencia permanente</span></div>
+                            <button class="btn-add" onclick="addToCart('Office 2021', 4500)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Office 2019 -->
+                <div class="product-card fade-in stagger-2">
+                    <div class="product-image">
+                        <span class="product-badge">Original</span>
+                        <img src="uploads/2019.jpeg" alt="Office 2019" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Microsoft Office 2019</h3>
+                        <p>Versión clásica de Office con todas las funciones esenciales.</p>
+                        <ul class="product-features">
+                            <li>Word - Procesador de texto</li>
+                            <li>Excel - Hojas de cálculo</li>
+                            <li>PowerPoint - Presentaciones</li>
+                            <li>Outlook - Correo profesional</li>
+                            <li>Access - Bases de datos</li>
+                            <li>Licencia permanente</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡3000<span>/licencia permanente</span></div>
+                            <button class="btn-add" onclick="addToCart('Office 2019', 3000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Office 365 -->
+                <div class="product-card fade-in stagger-3">
+                    <div class="product-image">
+                        <span class="product-badge">Original</span>
+                        <img src="uploads/365.jpeg" alt="Office 365" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Microsoft Office 365</h3>
+                        <p>Suscripción de Office con acceso a todas las aplicaciones.</p>
+                        <ul class="product-features">
+                            <li>Word - Procesador de texto</li>
+                            <li>Excel - Hojas de cálculo</li>
+                            <li>PowerPoint - Presentaciones</li>
+                            <li>Outlook - Correo profesional</li>
+                            <li>OneDrive - Almacenamiento en la nube</li>
+                            <li>Licencia permanente</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡5000<span>/licencia permanente</span></div>
+                            <button class="btn-add" onclick="addToCart('Office 365', 5000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avast Premium -->
+                <div class="product-card fade-in stagger-4">
+                    <div class="product-image">
+                        <span class="product-badge">Premium</span>
+                        <img src="uploads/avast.jpeg" alt="Avast Premium" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Avast Premium Security</h3>
+                        <p>Protección avanzada contra virus, malware y ataques cibernéticos.</p>
+                        <ul class="product-features">
+                            <li>Protección en tiempo real</li>
+                            <li>Firewall avanzado</li>
+                            <li>Protección contra ransomware</li>
+                            <li>Compatible Windows y Android</li>
+                            <li>Actualizaciones automáticas</li>
+                            <li>Licencia permanente</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡7000<span>/licencia permanente</span></div>
+                            <button class="btn-add" onclick="addToCart('Avast Premium Security', 7000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- McAfee Premium -->
+                <div class="product-card fade-in stagger-4">
+                    <div class="product-image">
+                        <span class="product-badge">Premium</span>
+                        <img src="uploads/mc.jpeg" alt="McAfee Premium" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>McAfee Premium Security</h3>
+                        <p>Protección completa contra amenazas de seguridad en línea.</p>
+                        <ul class="product-features">
+                            <li>Protección en tiempo real</li>
+                            <li>Firewall avanzado</li>
+                            <li>Protección contra ransomware</li>
+                            <li>Compatible Windows y Android</li>
+                            <li>Actualizaciones automáticas</li>
+                            <li>Licencia permanente</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡7000<span>/licencia permanente</span></div>
+                            <button class="btn-add" onclick="addToCart('McAfee Premium Security', 7000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Windows 11 Pro -->
+                <div class="product-card fade-in stagger-1">
+                    <div class="product-image">
+                        <span class="product-badge">Original</span>
+                        <img src="uploads/11 pro.jpeg" alt="Windows 11 Pro" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Windows 11 Pro</h3>
+                        <p>Sistema operativo profesional con todas las funciones avanzadas.</p>
+                        <ul class="product-features">
+                            <li>Interfaz moderna y renovada</li>
+                            <li>Seguridad Bitlocker</li>
+                            <li>Hyper-V Virtualización</li>
+                            <li>Escritorio remoto</li>
+                            <li>Windows Update empresarial</li>
+                            <li>Instalación remota incluida</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡5000<span>/licencia permanente</span></div>
+                            <button class="btn-add" onclick="addToCart('Windows 11 Pro', 5000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Windows 10 Pro -->
+                <div class="product-card fade-in stagger-2">
+                    <div class="product-image">
+                        <span class="product-badge">Original</span>
+                        <img src="uploads/10 pro.jpeg" alt="Windows 10 Pro" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Windows 10 Pro</h3>
+                        <p>Sistema operativo confiable y estable para profesionales.</p>
+                        <ul class="product-features">
+                            <li>Interfaz intuitiva y familiar</li>
+                            <li>Seguridad Bitlocker</li>
+                            <li>Hyper-V Virtualización</li>
+                            <li>Escritorio remoto</li>
+                            <li>Windows Update empresarial</li>
+                            <li>Instalación remota incluida</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡5000<span>/licencia permanente</span></div>
+                            <button class="btn-add" onclick="addToCart('Windows 10 Pro', 5000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canva Pro Education -->
+                <div class="product-card fade-in stagger-3">
+                    <div class="product-image">
+                        <span class="product-badge">Education</span>
+                        <img src="uploads/canva.jpeg" alt="Canva Pro Education" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Canva Pro Education</h3>
+                        <p>Plan educacional de Canva con todas las funciones Premium.</p>
+                        <ul class="product-features">
+                            <li>Diseños ilimitados</li>
+                            <li>Millones de imágenes y elementos</li>
+                            <li>Compatibilidad Windows</li>
+                            <li>Compatibilidad Mac</li>
+                            <li>Compatibilidad iOS</li>
+                            <li>Compatibilidad Android</li>
+                            <li>Licencia por 2 años</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡3000<span>/2 años</span></div>
+                            <button class="btn-add" onclick="addToCart('Canva Pro Education', 3000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visio Pro 2024 -->
+                <div class="product-card fade-in stagger-4">
+                    <div class="product-image">
+                        <span class="product-badge">Original</span>
+                        <img src="uploads/visio.jpeg" alt="Visio Pro 2024" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Microsoft Visio Pro 2024</h3>
+                        <p>Software de diagramas y visualizaciones profesional.</p>
+                        <ul class="product-features">
+                            <li>Diagramas profesionales</li>
+                            <li>Plantillas avanzadas</li>
+                            <li>Integración con Office</li>
+                            <li>Colaboración en tiempo real</li>
+                            <li>Compatible con Windows</li>
+                            <li>Instalación remota incluida</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡6000<span>/licencia permanente</span></div>
+                            <button class="btn-add" onclick="addToCart('Visio Pro 2024', 6000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Pro 2024 -->
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <span class="product-badge">Original</span>
+                        <img src="uploads/project.jpeg" alt="Project Pro 2024" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Microsoft Project Pro 2024</h3>
+                        <p>Software de gestión de proyectos profesional.</p>
+                        <ul class="product-features">
+                            <li>Planificación de proyectos</li>
+                            <li>Diagramas de Gantt</li>
+                            <li>Gestión de recursos</li>
+                            <li>Seguimiento de tareas</li>
+                            <li>Compatible con Windows</li>
+                            <li>Instalación remota incluida</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡6000<span>/licencia permanente</span></div>
+                            <button class="btn-add" onclick="addToCart('Project Pro 2024', 6000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adobe Acrobat Pro DC -->
+                <div class="product-card fade-in stagger-1">
+                    <div class="product-image">
+                        <span class="product-badge">Premium</span>
+                        <img src="uploads/dc.jpeg" alt="Adobe Acrobat Pro DC" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="product-content">
+                        <h3>Adobe Acrobat Pro DC</h3>
+                        <p>Solución completa para trabajar con documentos PDF profesionales.</p>
+                        <ul class="product-features">
+                            <li>Edición avanzada de PDF</li>
+                            <li>Conversión de documentos</li>
+                            <li>Firma digital segura</li>
+                            <li>Protección de documentos</li>
+                            <li>Colaboración en línea</li>
+                            <li>Licencia permanente</li>
+                        </ul>
+                        <div class="product-footer">
+                            <div class="product-price">₡7000<span>/licencia permanente</span></div>
+                            <button class="btn-add" onclick="addToCart('Adobe Acrobat Pro DC', 7000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart" id="carrito">
+        <div class="container">
+            <div class="section-header">
+                <h2>Carrito de Compras</h2>
+                <p>Revisa tus productos seleccionados antes de proceder al pago</p>
+            </div>
+            <div class="cart-content">
+                <div class="cart-items" id="cartItems">
+                    <div class="cart-empty">
+                        <div class="cart-empty-icon">🛒</div>
+                        <p>Tu carrito está vacío</p>
+                        <p style="font-size: 0.9rem;">Agrega productos para comenzar</p>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">Total: ₡<span id="cartTotal">0</span></div>
+                    <button class="btn btn-primary" onclick="checkout()">Proceder al Pago</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="payment" id="pago">
+        <div class="container">
+            <div class="section-header">
+                <h2>Métodos de Pago</h2>
+                <p>Aceptamos varios métodos de pago para tu comodidad</p>
+            </div>
+            <div class="payment-grid">
+                <div class="payment-card fade-in">
+                    <div class="payment-icon">📱</div>
+                    <h3>SINPE Móvil</h3>
+                    <p>Pago instantáneo desde tu banco</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery -->
+    <section class="delivery" id="entrega">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proceso de Entrega</h2>
+                <p>Así es como funciona tu compra con nosotros</p>
+            </div>
+            <div class="delivery-steps">
+                <div class="delivery-step fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Selecciona Productos</h3>
+                    <p>Elige los productos que deseas y agrégalos al carrito</p>
+                </div>
+                <div class="delivery-step fade-in stagger-1">
+                    <div class="step-number">2</div>
+                    <h3>Realiza el Pago</h3>
+                    <p>Completa el pago de forma segura por SINPE Móvil</p>
+                </div>
+                <div class="delivery-step fade-in stagger-2">
+                    <div class="step-number">3</div>
+                    <h3>Confirmación</h3>
+                    <p>Recibirás confirmación de tu compra por WhatsApp</p>
+                </div>
+                <div class="delivery-step fade-in stagger-3">
+                    <div class="step-number">4</div>
+                    <h3>Instalación Remota</h3>
+                    <p>Nos conectamos remotamente para instalar tu software</p>
+                </div>
+            </div>
+            <div class="delivery-note">
+                <strong>⏱️ Tiempo de entrega:</strong> La instalación remota se realiza en el horario acordado. Típicamente entre 24-48 horas después del pago confirmado.
+            </div>
+        </div>
+    </section>
+
+    <!-- Support -->
+    <section class="support" id="soporte">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soporte Técnico</h2>
+                <p>Estamos aquí para ayudarte</p>
+            </div>
+            <div class="support-grid">
+                <div class="support-item fade-in">
+                    <div class="support-icon">🔧</div>
+                    <div>
+                        <h4>Optimización de PC al Máximo</h4>
+                        <p>Limpieza general en el sistema</p>
+                    </div>
+                </div>
+                <div class="support-item fade-in stagger-1">
+                    <div class="support-icon">💻</div>
+                    <div>
+                        <h4>Instalación Remota</h4>
+                        <p>Instalamos y activamos tu software de forma segura</p>
+                    </div>
+                </div>
+                <div class="support-item fade-in stagger-2">
+                    <div class="support-icon">📞</div>
+                    <div>
+                        <h4>Soporte Continuo</h4>
+                        <p>Disponibles para resolver tus dudas después de la compra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security -->
+    <section class="security" id="seguridad">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: white;">Seguridad y Confianza</h2>
+                <p style="color: rgba(255,255,255,0.7);">Tu compra está protegida con nosotros</p>
+            </div>
+            <div class="security-grid">
+                <div class="security-item">
+                    <div class="security-icon">🔒</div>
+                    <span>Licencias 100% Originales</span>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">✓</div>
+                    <span>Garantía de Funcionamiento</span>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">🛡️</div>
+                    <span>Soporte Técnico Incluido</span>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">💳</div>
+                    <span>Pago Seguro</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <p>¿Tienes preguntas? Comunícate con nosotros</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">📱</div>
+                    <h3>WhatsApp</h3>
+                    <p>Disponible para consultas y soporte</p>
+                    <a href="https://wa.me/50660941491" class="whatsapp-btn" target="_blank">
+                        💬 Enviar Mensaje
+                    </a>
+                </div>
+                <div class="contact-card fade-in stagger-1">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>Envíanos tus consultas por correo</p>
+                    <a href="mailto:breitan2012@gmail.com" class="contact-link">
+                        breitan2012@gmail.com
+                    </a>
+                </div>
+                <div class="contact-card fade-in stagger-2">
+                    <div class="contact-icon">🕐</div>
+                    <h3>Horario</h3>
+                    <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                    <p style="font-size: 0.9rem; color: #64748B;">Sábado: 10:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Tech<span>Licencias</span> CR</div>
+                <div class="footer-contact">
+                    <a href="https://wa.me/50660941491" target="_blank">📱 WhatsApp: 6094-1491</a>
+                    <a href="mailto:breitan2012@gmail.com">📧 breitan2012@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechLicencias CR. Todos los derechos reservados. Licencias de software original.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
